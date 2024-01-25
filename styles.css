@@ -1,0 +1,17 @@
+h1 {
+    color: goldenrod;
+}
+
+
+p,
+li {
+    list-style-type: disc;
+    font-weight: 400;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    color: darkcyan;
+}
+
+.special {
+    list-style-type: circle;
+    color: blueviolet;
+}
