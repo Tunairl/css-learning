@@ -1,0 +1,41 @@
+/* Create your test CSS here */
+
+p {
+    color: crimson;
+
+}
+
+li {
+    display: inline;
+    float: left;
+    display: block;
+    padding: 8px;
+}
+
+.vırt-zırt li {
+    
+    list-style: lower-alpha;
+    color: cornflowerblue;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-weight: bold;
+
+}
+
+li .vırt-zırt : {
+    display: none;
+}
+
+li .vırt-zırt:hover {
+    display: contents;
+}
+
+
+.main-page span {
+    text-decoration-style: dotted;
+}
+
+.hg-header {
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+}
