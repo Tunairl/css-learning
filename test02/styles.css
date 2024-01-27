@@ -1,8 +1,11 @@
 /* Create your test CSS here */
 
-p {
-    color: crimson;
+.special {
+    color:midnightblue;
+}
 
+p {
+    color: aqua;
 }
 
 li {
@@ -12,8 +15,13 @@ li {
     padding: 8px;
 }
 
+.vırt-zırt {
+    border: dashed black;
+
+}
+
 .vırt-zırt li {
-    
+    border: solid red;
     list-style: lower-alpha;
     color: cornflowerblue;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
@@ -21,17 +29,34 @@ li {
 
 }
 
-li .vırt-zırt : {
+ul .vırt-zırt:active {
+    border: 1px;
     display: none;
 }
 
-li .vırt-zırt:hover {
+ul .vırt-zırt:hover {
     display: contents;
 }
 
 
 .main-page span {
     text-decoration-style: dotted;
+    color:limegreen;
+}
+
+/* .main-page span ile .shiny-tuna'daki renkler birbirinin aynısı, farklı renk yapamıyorum (span'lerde) */
+.shiny-tuna {
+    color:black;
+    text-decoration: wavy;
+    text-indent: 5%;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.main-page em {
+    font-weight: bold;
+    color:coral;
+
 }
 
 .hg-header {
