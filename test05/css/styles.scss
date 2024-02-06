@@ -1,0 +1,53 @@
+.columns {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 10px solid firebrick;
+
+    > * {
+        flex-shrink: 1;
+        flex-basis: 100%; 
+        // use either WIDTH or FLEX-BASIS, not both of them
+    }
+
+    @media (min-width: 750px) {
+        flex-direction: row;;
+    }
+}
+
+.card {
+    padding: 1rem;
+    background: hsl(var(--clr-green));
+
+    &:nth-child(2) {
+        background: pink;
+        align-self: flex-start;
+    }
+}
+
+.tags {
+    display: flex;
+    gap: 1em;
+    list-style: none;
+    font-size: 0.725rem;
+}
+
+.tag {
+    background: hsl(0 0% 100% / 0.4);
+    padding: 0.25rem 0.5rem;
+}
+
+:root {
+    --clr-orange: 7 100% 63%;
+    --clr-blue: 239 100% 50%;
+    --clr-green: 125 50% 50%;
+    --spacer: 2rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
