@@ -1,0 +1,75 @@
+.hg-header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.hg-header .navbar {
+  flex-grow: 1;
+}
+.hg-header .navbar,
+.hg-header .hamburger-menu {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 0.3rem;
+  position: static;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  background: pink;
+}
+.hg-header .navbar .menu-item,
+.hg-header .hamburger-menu .menu-item {
+  background: orange;
+}
+.hg-header .navbar .submenu-item,
+.hg-header .hamburger-menu .submenu-item {
+  flex-shrink: 1;
+  background: greenyellow;
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+.hg-header .navbar .submenu-btn:hover .submenu-item,
+.hg-header .hamburger-menu .submenu-btn:hover .submenu-item {
+  display: block;
+}
+
+.hg-btn {
+  width: 60%;
+  margin: auto;
+  padding: 22px 43px;
+  color: white;
+  font-weight: bolder;
+  border: 0ch;
+  border-radius: 5px;
+}
+
+.hg-btn-primary {
+  background: #fc5155;
+}
+
+.hg-btn-secondary {
+  background: #6747c7;
+}
+
+.hg-main-page {
+  background-image: url("slider_bg03.png");
+  padding-left: 1rem;
+}
+.hg-main-page .hg-main-page-title {
+  display: block;
+  font-weight: 700;
+  text-align: left;
+}
+.hg-main-page span {
+  font-weight: bold;
+  color: #fc5155;
+}
+
+.hg-features-area {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

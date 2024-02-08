@@ -1,0 +1,47 @@
+// Font
+@font-face {
+  font-family: "Font"; // Replace font name and remove this comment
+  src: url("path/to/font.woff2") format("woff2"); // Replace path and remove this comment
+}
+
+@font-face {
+  font-family: "x-icon"; // Replace with font name and remove this comment. This is for font-icons
+  src: url("/path/to/font.eot");
+  src: url("path/to/font.eot") format("embedded-opentype"), url("path/to/font.woff2") format("woff2"),
+    url("path/to/font.woff") format("woff"), url("path/to/font.ttf") format("truetype"),
+    url("path/to/font.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+//Colors
+$colorBlack: #1d1c1a;
+$colorWhite: #faf8f6;
+
+$colorError: #ff6961;
+$colorNotify: #a7c7e7;
+$colorSuccess: #c1e1c1;
+
+// Misc
+
+// Font Types
+@mixin font {
+  font-size: 32px;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  color: $colorBlack;
+
+  //tablet
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+    line-height: 125%;
+  }
+
+  //desktop
+  @media screen and (min-width: 1360px) {
+    font-size: 32px;
+    line-height: 125%;
+  }
+}
