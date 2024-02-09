@@ -47,14 +47,19 @@
 }
 
 .hg-btn {
-    width: 60%;
+    display: inline-block;
+    width: 235.262px;
     margin: auto;
     padding: 22px 43px;
+    justify-content: left;
 
+    line-height: 24px;
     color: white;
     font-weight: bolder;
+
     border: 0ch;
     border-radius: 5px;
+
 }
 
 .hg-btn-primary {
@@ -68,12 +73,30 @@
 
 .hg-main-page {
     background-image: url("slider_bg03.png");
-    padding-left: 1rem;
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: column;
 
     .hg-main-page-title {
         display: block;
+
+        line-height: 44.2px;
+        height: 88.4px;
         font-weight: 700;
+
         text-align: left;
+        margin-block-end: 30px;
+    }
+
+    .subtitle {
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        box-sizing: border-box;
+
+        text-align: left;
+        font-weight: 400;
+        line-height: 31.6px;
+        margin-bottom: 55px;
     }
 
     span {
