@@ -1,0 +1,22 @@
+.even-columns {
+    padding: 1rem;
+    display: flex;
+    gap: 1em;
+    
+    > * {
+        margin: 0;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    @media (max-width: 40rem) {
+        flex-direction: column;
+    }
+}
+
+.card {
+    background: linear-gradient(90deg, steelblue, firebrick);
+    border-radius: 3px;
+    color: white;
+    
+}
