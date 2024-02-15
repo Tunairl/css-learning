@@ -1,16 +1,33 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bolder;
+}
+
+
+
+
 .hg-header {
 
     display: flex;
     position: fixed;
     top: 0;
     width: 100%;
+    padding: 1.2rem;
 
-    .navbar {
-        flex-grow: 1;
+    .hg-logo {
+        justify-self: flex-start;
     }
 
-    .navbar,
+    .navbar {
+        flex: 1 1 10%;
+    }
+
+
     .hamburger-menu {
+
         display: flex;
         flex-wrap: wrap;
         list-style: none;
@@ -19,12 +36,17 @@
 
         position: static;
         justify-content: space-evenly;
-        align-items: flex-start;
+        align-items: flex-end;
 
         background: pink;
 
+
         .menu-item {
             background: orange;
+
+            >* {
+                flex-basis: 100;
+            }
         }
 
         .submenu-item {
@@ -48,8 +70,7 @@
 
 .hg-btn {
     display: inline-block;
-    width: 235.262px;
-    margin: auto;
+    width: 60%;
     padding: 22px 43px;
     justify-content: left;
 
@@ -57,7 +78,7 @@
     color: white;
     font-weight: bolder;
 
-    border: 0ch;
+
     border-radius: 5px;
 
 }
@@ -72,19 +93,31 @@
 }
 
 .hg-main-page {
-    background-image: url("slider_bg03.png");
+    background-image: url(../images/slider_bg03.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
     padding: 0px 15px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+
+    height: 80vh;
+    color: white;
+
+
+    text-align: left;
 
     .hg-main-page-title {
         display: block;
+        align-self: self-end;
+        font-weight: bolder;
 
         line-height: 44.2px;
         height: 88.4px;
         font-weight: 700;
 
-        text-align: left;
+
         margin-block-end: 30px;
     }
 
@@ -93,10 +126,11 @@
         font-size: 20px;
         box-sizing: border-box;
 
-        text-align: left;
+
         font-weight: 400;
         line-height: 31.6px;
         margin-bottom: 55px;
+        justify-content: center;
     }
 
     span {
@@ -106,8 +140,80 @@
 
 }
 
-.hg-features-area {
+.hg-card {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hg-features-area {
+    height: 60vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    justify-content: space-around;
+    
+
+    .hg-card-feature {
+        align-items: start;
+    }
+}
+
+.hg-title {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    > h2 {
+        flex-basis: 100%;
+        align-items: center;
+    }
+}
+
+.hplans {
+    padding: 1rem;
+    border-radius: 2px;
+    height: 80vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .hplans-contents {
+
+        justify-content: space-evenly;
+        gap: 3rem;
+
+        span{
+            font-size: larger;
+            font-weight: bolder;
+            color: #6747c7;
+        }
+        
+        .hg-card-hplans {
+            padding: 1rem;
+            flex-basis: 90%;
+            background: pink;
+
+            p {
+                font-size: xx-large;
+                font-weight: bolder;
+            }
+
+            .hg-btn-primary {
+                width: 90%;
+            }
+            
+        }
+
+    }
+    
+
+
+    
 }

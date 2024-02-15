@@ -44,7 +44,7 @@ body {
   font-feature-settings: "cv03" on, "cv04" on;
   color: #1d1c1a;
   text-align: left;
-  background-color: #faf8f6;
+  background-color: rgb(237, 244, 248);
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
