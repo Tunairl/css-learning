@@ -1,0 +1,116 @@
+.hg-main-page {
+  background-image: url(../images/breadcrumb_bg.png);
+  background-position: left center;
+  background-size: cover;
+  display: flex;
+  padding: 12rem 1em;
+  align-items: center;
+  height: 55dvh;
+}
+.hg-main-page > * {
+  color: white;
+}
+.hg-main-page .hg-main-page-title {
+  font-size: 38px;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.hg-main-page .subtitle {
+  font-size: 16px;
+  font-weight: 400;
+}
+@media screen and (min-width: 1360px) {
+  .hg-main-page {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100vh;
+  }
+  .hg-main-page > * {
+    flex-basis: 100%;
+    padding: 0 8rem;
+  }
+  .hg-main-page .hg-main-page-title {
+    margin: 0;
+  }
+  .hg-main-page .subtitle {
+    align-self: baseline;
+  }
+}
+
+.hg-contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 1rem;
+}
+.hg-contact-info .hg-card-contacts {
+  width: 100%;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem;
+  border: 1px solid lightgray;
+}
+.hg-contact-info .hg-card-contacts .card-contacts-contents > * {
+  padding-bottom: 4px;
+}
+.hg-contact-info .hg-card-contacts .card-contacts-contents > h5 {
+  color: rgb(71, 73, 90);
+  font-size: 32px;
+  font-weight: 500;
+  padding-top: 4px;
+}
+@media screen and (min-width: 1360px) {
+  .hg-contact-info .hg-card-contacts {
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: nowrap;
+    flex: 1;
+    align-items: stretch;
+    padding: 10rem 10rem;
+    gap: 2rem;
+  }
+}
+
+.hg-contact-us {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+.hg-contact-us .hg-title span {
+  color: rgb(65, 129, 206);
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.hg-contact-us .hg-title h2 {
+  color: rgb(71, 73, 90);
+  font-size: 36px;
+  font-weight: 700;
+}
+.hg-contact-us .contact-us-form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.hg-contact-us .contact-us-form form .search-bar {
+  padding: 1rem 1rem;
+  margin-right: 10em;
+  margin-bottom: 1rem;
+  width: 100%;
+  border-color: transparent;
+  border-radius: 3px;
+  background-color: rgb(246, 246, 246);
+}
+.hg-contact-us .contact-us-form form :nth-child(3) > .search-bar {
+  padding-bottom: 8rem;
+}
+.hg-contact-us .contact-us-form form .hg-btn-third {
+  appearance: button;
+  background-color: rgb(9, 235, 175);
+  color: rgb(71, 73, 90);
+  padding: 22px 43px;
+  margin-top: 3rem;
+}

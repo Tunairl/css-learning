@@ -7,44 +7,45 @@
     <title>Contact</title>
     <link rel="stylesheet" href="css/template.css">
     <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/contacts.css">
 </head>
 
 <body>
     <!--HEADER START-->
     <header class="hg-header">
-        <img src="\assignment-1\logo.png" alt="hg-logo">
+        <img class="hg-logo" src="images/logo.png" alt="hg-logo">
         <!--NAV START-->
-        <nav>
+        <nav class="navbar">
             <ul class="hamburger-menu">
-                <li><a href="hostgem-home.html">Home</a>
+                <li class="menu-item submenu-btn"><a href="#">Home</a>
                     <ul class="submenu">
-                        <li> <a href="#">Home One</a></li>
-                        <li> <a href="#">Home Two</a></li>
-                        <li> <a href="#">Home Three</a></li>
-                        <li> <a href="#">Home Four</a></li>
-                        <li> <a href="#">Home Five</a></li>
-                        <li> <a href="#">Home Six</a></li>
+                        <li class="submenu-item"> <a href="#">Home One</a></li>
+                        <li class="submenu-item"> <a href="#">Home Two</a></li>
+                        <li class="submenu-item"> <a href="#">Home Three</a></li>
+                        <li class="submenu-item"> <a href="#">Home Four</a></li>
+                        <li class="submenu-item"> <a href="#">Home Five</a></li>
+                        <li class="submenu-item"> <a href="#">Home Six</a></li>
                     </ul>
                 </li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Hosting</a>
+                <li class="menu-item"><a href="#">About Us</a></li>
+                <li class="menu-item submenu-btn"><a href="#">Hosting</a>
                     <ul class="submenu">
-                        <li> <a href="#">Shared Hosting</a></li>
-                        <li> <a href="#">Reseller Hosting</a></li>
-                        <li> <a href="#">VPS Hosting</a></li>
+                        <li class="submenu-item"> <a href="#">Shared Hosting</a></li>
+                        <li class="submenu-item"> <a href="#">Reseller Hosting</a></li>
+                        <li class="submenu-item"> <a href="#">VPS Hosting</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Domain</a></li>
-                <li><a href="#">Pages</a>
+                <li class="menu-item"><a href="#">Domain</a></li>
+                <li class="menu-item submenu-btn"><a href="#">Pages</a>
                     <ul class="submenu">
-                        <li><a href="#">Dedicated Server</a></li>
-                        <li><a href="#">WHMCS Server</a></li>
-                        <li><a href="#">Support Page</a></li>
-                        <li><a href="#">News Page</a></li>
-                        <li><a href="#">News Details</a></li>
+                        <li class="submenu-item"><a href="#">Dedicated Server</a></li>
+                        <li class="submenu-item"><a href="#">WHMCS Server</a></li>
+                        <li class="submenu-item"><a href="#">Support Page</a></li>
+                        <li class="submenu-item"><a href="#">News Page</a></li>
+                        <li class="submenu-item"><a href="#">News Details</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Contact</a></li>
+                <li class="menu-item"><a href="hostgem-contacts.html">Contact</a></li>
             </ul>
         </nav>
         <!--NAV END-->
@@ -53,8 +54,7 @@
     <!--HEADER END-->
 
     <!--MAIN PAGE START-->
-    <section class="hg-main-page"
-        style="background-image: url(\assignment-1\slider_bg03.png);background-size: cover;">
+    <section class="hg-main-page">
         <h2 class="hg-main-page-title">Get In Touch</h2>
         <p class="subtitle">The story of how Hostgem came to be.</p>
     </section>
@@ -89,7 +89,7 @@
     </section>
     <!--CONTACT INFO END-->
 
-    <!--CONTACT US AREA START-->
+    <!--GET IN TOUCH AREA START-->
     <section class="hg-contact-us">
         <div class="hg-title">
             <span>Get In Touch</span>
@@ -98,16 +98,16 @@
         <div class="contact-us-form">
             <form action="#">
                 <div class="contact-field">
-                    <input type="text" placeholder="Enter your name here...">
-                    <i>user-icon</i>
+                    <input class="search-bar" type="text" placeholder="Enter your name here...">
+                    <i class="far fa-user"></i>
                 </div>
                 <div class="contact-field">
-                    <input type="email" placeholder="Enter your email here...">
-                    <i>envelope-icon</i>
+                    <input class="search-bar" type="email" placeholder="Enter your email here...">
+                    <i class="fas fa-envelope"></i>
                 </div>
                 <div class="contact-field">
-                    <input type="message" placeholder="Enter your message here...">
-                    <i>pencil-icon</i>
+                    <input class="search-bar" type="message" placeholder="Enter your message here...">
+                    <i class="fas fa-pencil-alt"></i>
                 </div>
                 <button type="button" class="hg-btn hg-btn-third">Submit Now</button>
             </form>
@@ -115,10 +115,9 @@
     </section>
     <!--GET IN TOUCH AREA END-->
 
-    <!--FOOTER START-->
     <footer>
-        <div class=" hg-footer-title">
-            <img src="\assignment-1\logo.png" alt="logo">
+        <div class="hg-footer-title">
+            <img class="hg-logo" src="images/logo.png" alt="logo">
             <p class="hg-footer-description">
                 Gravida nibh vel velit auctor aliquetn quibibendum auci elit cons equat ipsutis
                 sem nibh id elit. Duis sed odio sit amet nibh vulputate.

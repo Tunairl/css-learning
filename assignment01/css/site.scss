@@ -1,25 +1,182 @@
 ﻿@import "_lib";
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bolder;
+}
+
+section {
+    margin: 0;
+    height: 80dvh;
+    background-color: white;
+}
+
+.hg-logo {
+    align-self: baseline;
+    max-width: 11rem;
+}
+
 .hg-header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1.2rem;
 
-    .hg-logo {
-
-    }
     .navbar {
-        .hamburger-menu {
-            li {
+        flex: 1 1 10%;
+    }
 
+    .hamburger-menu {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+
+        // hamb menu basıldığında height eklenecek
+        gap: 0.3rem;
+
+        position: relative;
+        justify-content: space-evenly;
+        align-items: flex-start;
+
+        color: white;
+        background: #6747c7;
+
+        .menu-item {
+            background: orange;
+
+            >* {
+                flex-basis: 100;
+            }
+        }
+
+        .submenu-item {
+            flex-shrink: 1;
+            background: greenyellow;
+            list-style: none;
+
+            display: none;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .submenu-btn:hover {
+            .submenu-item {
+                display: block;
             }
         }
     }
 }
 
 .hg-btn {
-    color:black;
-    &.hg-btn-primary {
-        color:white;
+    display: inline-block;
+    max-width: 25dvh;
+    padding: 22px 43px;
+    justify-content: left;
+
+    line-height: 24px;
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    >* {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.hg-btn-primary {
+    background: #fc5155;
+}
+
+.hg-btn-secondary {
+    background: #6747c7;
+}
+
+.hg-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > ul {
+        list-style: none;
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #0a0d35;
+    color: #8e9da8;
+
+    padding: 2rem 1rem;
+
+    .hg-footer-title {
+        >* {
+            padding-bottom: 1rem;
+        }
+
+        .hg-footer-description {
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 30px;
+        }
     }
 
+    .hg-footer-contents {
+
+        .hg-footer-list {
+            margin-bottom: 30px;
+
+            h4 {
+                font-family: 'Poppins', sans-serif;
+                color: white;
+                margin-bottom: 25px;
+            }
+
+            ul {
+                list-style-type: none;
+
+                li {
+                    font-family: Lato, sans-serif;
+                    font-size: 16px;
+                    font-weight: 400;
+
+                    margin-bottom: 10px;
+                    line-height: 24px;
+                    text-align: left;
+
+                    >a {
+                        text-decoration: none;
+                        color: #8e9da8;
+                    }
+                }
+            }
+        }
+
+        .hg-footer-newsletter {
+
+            h4 {
+                font-family: 'Poppins', sans-serif;
+                color: #ffffff;
+            }
+
+            form {
+                input {
+                    background-color: transparent;
+                    border: rgb(142, 157, 168) 5px;
+                    color: white;
+                }
+            }
+
+        }
+    }
 }
 
 /* *********************************
@@ -62,6 +219,7 @@
         margin-right: 10px;
         vertical-align: middle;
     }
+
     // Should be fixed to the page if the user has scrolled down far enough.
     &.sticky {
         position: fixed;

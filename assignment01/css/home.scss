@@ -1,97 +1,3 @@
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-weight: bolder;
-}
-
-
-
-
-.hg-header {
-
-    display: flex;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 1.2rem;
-
-    .hg-logo {
-        justify-self: flex-start;
-    }
-
-    .navbar {
-        flex: 1 1 10%;
-    }
-
-
-    .hamburger-menu {
-
-        display: flex;
-        flex-wrap: wrap;
-        list-style: none;
-
-        gap: 0.3rem;
-
-        position: static;
-        justify-content: space-evenly;
-        align-items: flex-end;
-
-        background: pink;
-
-
-        .menu-item {
-            background: orange;
-
-            >* {
-                flex-basis: 100;
-            }
-        }
-
-        .submenu-item {
-            flex-shrink: 1;
-            background: greenyellow;
-            list-style: none;
-
-            display: none;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .submenu-btn:hover {
-            .submenu-item {
-                display: block;
-            }
-        }
-    }
-
-}
-
-.hg-btn {
-    display: inline-block;
-    width: 60%;
-    padding: 22px 43px;
-    justify-content: left;
-
-    line-height: 24px;
-    color: white;
-    font-weight: bolder;
-
-
-    border-radius: 5px;
-
-}
-
-.hg-btn-primary {
-    background: #fc5155;
-
-}
-
-.hg-btn-secondary {
-    background: #6747c7;
-}
-
 .hg-main-page {
     background-image: url(../images/slider_bg03.png);
     background-size: cover;
@@ -102,9 +8,8 @@ h5 {
     flex-direction: column;
     justify-content: center;
 
-    height: 80vh;
+    height: 80dvh;
     color: white;
-
 
     text-align: left;
 
@@ -112,11 +17,11 @@ h5 {
         display: block;
         align-self: self-end;
         font-weight: bolder;
+        font-size: 34px;
+        font-family: 'Poppins', sans-serif;
 
         line-height: 44.2px;
         height: 88.4px;
-        font-weight: 700;
-
 
         margin-block-end: 30px;
     }
@@ -125,7 +30,6 @@ h5 {
         font-family: 'Lato', sans-serif;
         font-size: 20px;
         box-sizing: border-box;
-
 
         font-weight: 400;
         line-height: 31.6px;
@@ -137,68 +41,100 @@ h5 {
         font-weight: bold;
         color: #fc5155;
     }
-
 }
 
-.hg-card {
-    display: flex;
-    flex-direction: column;
+.hg-card-feature {
+    align-items: flex-start;
+    padding: 0 15px;
     justify-content: space-around;
-    align-items: center;
+
+    >* {
+        padding: .3rem;
+    }
+
+    .hg-card-title {
+        font-size: 22px;
+        font-weight: 600;
+        padding: 1em 0;
+    }
+
+    .hg-card-description {
+        font-size: 16px;
+        font-weight: 400;
+    }
 }
 
 .hg-features-area {
-    height: 60vh;
+    height: 80dvh;
 
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: flex-start;
-    
-    justify-content: space-around;
-    
+    justify-content: center;
 
-    .hg-card-feature {
-        align-items: start;
-    }
+    gap: 5rem;
 }
 
 .hg-title {
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-    > h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+
+    h2 {
+        color: rgb(71, 73, 90);
+        font-family: Poppins, sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    p {
+        color: rgb(107, 124, 147);
+    }
+
+    >* {
+        padding: .3rem;
         flex-basis: 100%;
-        align-items: center;
+        align-self: center;
+        margin: 1rem;
     }
 }
 
 .hplans {
     padding: 1rem;
     border-radius: 2px;
-    height: 80vh;
-    
+    height: 150dvh;
+    background-color: white;
+
+
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     .hplans-contents {
 
+
         justify-content: space-evenly;
         gap: 3rem;
 
-        span{
+        span {
             font-size: larger;
             font-weight: bolder;
             color: #6747c7;
         }
-        
+
         .hg-card-hplans {
-            padding: 1rem;
+            margin: 2rem 0;
+            padding: 2rem;
             flex-basis: 90%;
-            background: pink;
+            background: white;
+            gap: .3rem;
+            color: rgb(33, 37, 41);
+            border: solid lightgray 1px;
+            border-radius: 2px;
 
             p {
                 font-size: xx-large;
@@ -206,14 +142,222 @@ h5 {
             }
 
             .hg-btn-primary {
-                width: 90%;
+                padding: 1rem 2rem;
+                width: 100%;
             }
-            
+
+            .hg-btn-secondary {
+                padding: 1rem 2rem;
+                width: 100%;
+            }
+
+            .hplans-included {
+                font-weight: 400;
+                font-size: 16px;
+
+                >* {
+                    padding: .2rem;
+                }
+            }
+        }
+    }
+}
+
+.hg-search-area {
+    margin: 0;
+    padding: 1rem;
+    height: 80dvh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../images/search-bg.jpg);
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: cover;
+
+    color: white;
+
+    .hg-title {
+
+        h2,
+        p {
+            color: white;
+        }
+    }
+
+    .search-contents {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .search-bar {
+            padding: 1em 0;
+
+            border-radius: 3px;
+
+            width: 90vw;
+            margin-bottom: 1rem;
         }
 
+        .hg-btn-primary {
+            margin-bottom: 1rem;
+            padding: 18px 50px;
+        }
+
+        .domain-list {
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            padding: 1rem;
+
+            >* {
+                padding: 4px;
+                flex: 1 1 7rem;
+            }
+        }
+
+        .payment-icons {
+            display: flex;
+            flex-wrap: wrap;
+
+            >* {
+                text-align: center;
+                padding: 1em;
+                flex: 1 1 6rem;
+            }
+        }
     }
-    
+}
 
+.hg-unlimited-features {
+    height: 105dvh;
 
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-bottom: 5rem;
+
+    background-color: #edf4f8;
+
+    .unlimitedf-contents {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        gap: 1rem;
+
+        h5 {
+            display: block;
+            font-size: 22px;
+            font-weight: bold;
+
+            margin-bottom: 5px;
+
+            color: rgb(71, 73, 90);
+        }
+
+        p {
+            display: block;
+            font-size: 16px;
+            font-weight: 400;
+
+            color: rgb(107, 124, 147);
+            color-scheme: light;
+        }
+    }
+}
+
+.hg-testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 110dvh;
+
+    background-color: white;
+
+    .testimonials-contents {
+
+        .testimonials-review {
+            text-align: center;
+
+            >* {
+                padding: 5px 0;
+            }
+
+            .review-contents {
+                margin-bottom: 1rem;
+
+                p {
+                    display: block;
+                    font-size: 23px;
+                    font-weight: 400;
+                    height: auto;
+                    line-height: 34.5px;
+                    margin-bottom: 30px;
+
+                    color: rgb(107, 124, 147);
+                }
+
+                .testimonials-person {
+                    display: block;
+                    font-family: Lato, sans-serif;
+                    font-size: 14px;
+                    font-weight: 600;
+                    letter-spacing: 2px;
+                    line-height: 14px;
+                    margin-bottom: 5px;
+
+                    color: rgb(103, 71, 199)
+                }
+
+                .testimonials-person-title {
+                    color: rgb(133, 148, 167);
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .testimonials-brands {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            >* {
+                padding: 1rem;
+                gap: 3px;
+                flex: 0 1 5rem;
+            }
+        }
+    }
+}
+
+.moneyback-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    background-color: rgb(103, 71, 199);
+
+    .hg-title {
+
+        h2,
+        p {
+            color: white;
+        }
+    }
+
+    .moneyback-contents {
+        >* {
+            margin-bottom: 4rem;
+        }
+    }
 }
